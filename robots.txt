@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mbti.mozule.co.jp/sitemap.xml
