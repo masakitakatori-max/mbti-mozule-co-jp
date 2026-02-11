@@ -83,3 +83,17 @@ blockquote {
 .posts .d { color: var(--muted); font-size: 14px; margin-top: 4px; }
 
 .footer { color: var(--muted); font-size: 13px; margin-top: 18px; }
+
+.breadcrumb {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.breadcrumb li::after { content: '>'; margin: 0 6px; opacity: 0.5; }
+.breadcrumb li:last-child::after { content: ''; margin: 0; }
+.breadcrumb li:last-child { color: var(--text); }
