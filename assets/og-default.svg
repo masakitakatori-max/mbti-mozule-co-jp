@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b0f14"/>
+  <rect x="400" y="250" width="400" height="4" fill="#ffd166"/>
+  <text x="600" y="300" text-anchor="middle" fill="#e8edf3" font-family="sans-serif" font-size="48">MBTI Module</text>
+  <text x="600" y="350" text-anchor="middle" fill="#9fb0c0" font-family="sans-serif" font-size="24">mbti.mozule.co.jp</text>
+</svg>
