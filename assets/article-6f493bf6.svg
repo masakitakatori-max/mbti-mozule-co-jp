@@ -1,0 +1,15 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="artgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2ECC71;stop-opacity:0.7" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#artgrad)"/>
+  <rect x="50" y="50" width="1100" height="530" fill="none" stroke="white" stroke-width="3" rx="20" opacity="0.3"/>
+  <line x1="100" y1="200" x2="1100" y2="200" stroke="white" stroke-width="2" opacity="0.2"/>
+  <circle cx="150" cy="150" r="40" fill="white" opacity="0.2"/>
+  <circle cx="1050" cy="500" r="50" fill="white" opacity="0.15"/>
+  <text x="600" y="320" font-size="48" font-weight="bold" text-anchor="middle" fill="white">MBTIモジュール</text>
+  <text x="600" y="500" font-size="20" text-anchor="middle" fill="white" opacity="0.85">MBTIモジュール</text>
+</svg>
