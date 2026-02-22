@@ -125,3 +125,172 @@ blockquote {
 .cat-card h2 { font-size: 17px; margin: 0; }
 
 .recent { margin: 20px 0; }
+
+/* Image styling */
+img[alt="eyecatch"] {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 28px auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25), 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img[alt="eyecatch"]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35), 0 0 1px rgba(255, 255, 255, 0.15);
+}
+
+/* Article image container */
+.article-image {
+  position: relative;
+  margin: 32px 0;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(122,209,255,0.05), rgba(255,209,102,0.03));
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Enhanced heading styles */
+h1 {
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--text), rgba(255, 209, 102, 0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: fadeInDown 0.6s ease;
+}
+
+h2 {
+  position: relative;
+  padding-left: 16px;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 24px;
+  background: var(--link);
+  border-radius: 2px;
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced card styling */
+.card {
+  animation: fadeInUp 0.6s ease 0.1s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Links styling */
+a {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Code block enhancements */
+code {
+  background: rgba(122, 209, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(122, 209, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+code:hover {
+  background: rgba(122, 209, 255, 0.15);
+  border-color: rgba(122, 209, 255, 0.4);
+}
+
+/* Blockquote enhancement */
+blockquote {
+  position: relative;
+  padding-left: 20px;
+  font-style: italic;
+}
+
+blockquote::before {
+  content: '"';
+  position: absolute;
+  left: -10px;
+  font-size: 48px;
+  opacity: 0.15;
+  color: var(--link);
+}
+
+/* List styling */
+ul li::marker, ol li::marker {
+  color: var(--accent);
+}
+
+/* Post list enhancement */
+.posts li {
+  transition: background 0.2s ease, transform 0.2s ease;
+  padding: 16px;
+  margin: 0 -16px;
+  border-radius: 8px;
+}
+
+.posts li:hover {
+  background: rgba(122, 209, 255, 0.05);
+  transform: translateX(4px);
+}
+
+/* Responsive image */
+@media (max-width: 768px) {
+  img[alt="eyecatch"] {
+    max-width: 100%;
+    margin: 20px -16px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
